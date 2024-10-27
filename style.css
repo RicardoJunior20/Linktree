@@ -1,0 +1,104 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Configurações de base */
+html {
+    height: 100vh;
+    font-size: 14px;
+}
+
+body {
+    background: linear-gradient(135deg, #FADADD, #E6E1FF);
+    height: 100%;
+}
+
+/* Estilos da estrutura principal */
+.container {
+    height: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #000000;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo do header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    max-width: 120px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 300;
+}
+
+/* Estilo dos botões */
+section.botoes-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo geral para todos os botões, incluindo o do footer */
+a.link button, footer a.btn-footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    width: 100%; /* Faz o botão preencher o container */
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(135deg, #F7A1B1, #C6B4FF); /* Gradiente mais intenso */
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ícones alinhados à direita nos botões */
+a.link button i {
+    font-size: 1.5em;
+    margin-left: 10px; /* Espaço entre o texto e o ícone */
+}
+
+/* Efeito de hover para todos os botões */
+a.link button:hover, footer a.btn-footer:hover {
+    transform: scale(1.08); /* Leve aumento no hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+/* Estilo do footer */
+footer {
+    text-align: center;
+    margin: 30px;
+}
+/* Espaço entre o texto e o ícone */
+
+a.link button i {
+    font-size: 1.5em;
+    margin-left: 20px; /* Ajuste a distância do texto para o ícone */
+}
