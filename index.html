@@ -22,7 +22,7 @@
         </header>
 
         <section class="botoes-links">
-            <a href="images/nossosHorarios.png" target="_blank" class="link">
+            <a href="#" class="link" onclick="openModal()">
                 <button class="degrade">
                     <span>Nossos Horários</span>
                     <i class="bi bi-clock-fill"></i>
@@ -80,11 +80,35 @@
         <footer>
             <a href="https://www.instagram.com/alepessoajp/?hl=en" class="btn-footer degrade" target="_blank">Acesse nosso instagram</a>
         </footer>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img src="images/nossosHorarios.png" alt="Nossos Horários">
+            </div>
+        </div>
     </div>
 </body>
 <script>
     function showMessage() {
         alert("Em breve, teremos um contato direto para a unidade Bancários! Por enquanto, por favor, faça seu pedido em outra unidade. Agradecemos sua compreensão 😊");
     }
+    // Função para abrir o modal
+    function openModal() {
+            document.getElementById("modal").style.display = "flex";
+        }
+
+        // Função para fechar o modal
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        // Fecha o modal ao clicar fora dele
+        window.onclick = function(event) {
+            var modal = document.getElementById("modal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
 </script>
 </html>
